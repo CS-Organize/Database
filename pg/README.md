@@ -59,3 +59,13 @@ SELECT * FROM <table_name>; -- Select Data
 UPDATE <table_name> SET <column_name> = <value> WHERE <condition>; -- Update Data
 DROP TABLE <table_name>; -- Drop Table
 ```
+
+### Run SQL Script
+
+```sql
+\i <file_path>; -- Run SQL Script
+```
+
+```sh
+psql -U <user_name> -d <db_name> -a -f <file_path>
+```
